@@ -54,11 +54,18 @@ h2 {
   top: 270px;
   text-align: center;
   background-color: #70ad47;
-	border: 1px solid black;
+  border: 1px solid black;
+}
+
+.logo {
+	position: relative;
+	top: -50px;
 }
 
 .info-container {
 	display: inline-block;
+	margin-left: 40px;
+	margin-top: 40px;
 }
 
 .item {
