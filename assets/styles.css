@@ -4,18 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-	font-family: "Comic Sans", cursive;
-	margin: auto;
-	height: 100vh;
+html {
+	background-color: #fff;
 }
 
-header {
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.header {
   background-image: url(./design1_image1.jpg);
   height: 400px;
   background-size: cover;
   background-position: top;
-	/*position: relative;*/
+  font-family: "Comic Sans", cursive;
 }
 
 h1 {
@@ -27,8 +30,8 @@ h1 {
 
 nav {
 	display: inline;
-	position: relative;
-	left: 700px;
+  position: absolute;
+	right: 30px;
 }
 
 nav > a {
@@ -37,29 +40,37 @@ nav > a {
 	padding: 5px 15px;
 	margin: 10px;
 	text-decoration: none;
+	box-shadow: 5px 5px #dcdcdc;
 }
 
 #home, 
 #about,
-#contact {
+#contact,
+#game_info,
+#rules {
 	background-color: #70ad47;
 }
 
-.about-link, .contact-link, .home-link {
+.about-link, .contact-link, .home-link,
+.game-info-link, .rules-link {
 	background-color: #4472c4;
 }
 
 h2 {
 	position: relative;
-  top: 270px;
+  top: 290px; /* si yo saco el position absolute del nav queda, esta bien asi tanto top?*/
   text-align: center;
   background-color: #70ad47;
   border: 1px solid black;
 }
 
+.main-container {
+	display: flex;
+}
+
 .logo {
-	position: relative;
-	top: -50px;
+	width: 100%;
+	max-width: 200px;
 }
 
 .info-container {
@@ -72,3 +83,25 @@ h2 {
 	margin-top: 5px;
   margin-bottom: 5px;
 }
+
+
+/* Game-info section */ 
+
+td {
+	padding: 0 15px;
+}
+/*
+.info-contact .phone {
+	display: inline;
+} */
+
+/*
+.phone, .email {
+	display: inline;
+}*/
+
+.test {
+	display: flex; /* puedo usar flex?*/
+	justify-content: space-between;
+}
+
