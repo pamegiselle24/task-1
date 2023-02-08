@@ -57,12 +57,17 @@ nav > a {
 #about,
 #contact,
 #game-info,
-#rules {
+#rules,
+#registration {
 	background-color: #70ad47;
 }
 
-.about-link, .contact-link, .home-link,
-.game-info-link, .rules-link {
+.about-link, 
+.contact-link, 
+.home-link,
+.game-info-link, 
+.rules-link, 
+.registration-link {
 	background-color: #4472c4;
 }
 
@@ -155,6 +160,23 @@ td {
 	justify-content: space-between;
 }
 
+.game-locations h2 {
+	text-align: center;
+  background-color: unset;
+  border: white;
+  padding: 5px 0px;
+}
+
+.location-container {
+	display:flex;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.location-container h4 {
+	text-align: center;
+}
+
 /* Rules section */ 
 
 .rules-title {
@@ -191,4 +213,63 @@ td {
 .rules-section ul {
 	list-style-type: circle;
 	padding-left: 4em;
+}
+
+/* Registration Form */
+
+
+fieldset {
+  border: none;
+  padding: 1em 0;
+}
+
+.sup-ind { 
+	vertical-align: super;
+	font-size: 12px;
+} 
+
+.drop-down-menu-school {
+	display: flex;
+	flex-direction: column;
+  gap: 10px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #000;
+	padding: 0px 40px;
+	margin: 10px 0;
+}
+
+.container-form-position,
+.container-form-uniform {
+	display: flex;
+	flex-direction: column;
+}
+
+legend {
+	font-weight: 600;
+}
+
+.signature {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.signature span {
+	width: 300px;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 20px auto;
+  height: 40px;
+  font-size: 1.1rem;
+  background-color: beige;
+  border-color: white;
+  min-width: 300px;
 }
